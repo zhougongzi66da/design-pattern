@@ -2,7 +2,7 @@ package singleton.type7;
 
 /**
  * @description: 单例模式-懒汉式（枚举）
- * 不仅可以避免多线程同步问题，而且可以防止反序列化重新创建新的对象
+ * 不仅可以避免多线程同步问题，而且可以防止反序列化和反射重新创建新的对象
  * @Author: zhouyiming
  * @CreateTime: 2022-10-12  16:33
  */
