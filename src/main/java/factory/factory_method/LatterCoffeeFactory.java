@@ -7,6 +7,6 @@ package factory.factory_method;
  */
 public class LatterCoffeeFactory implements CoffeeFactory {
     public Coffee createCoffee() {
-        return new AmericanCoffee();
+        return new LatterCoffee();
     }
 }

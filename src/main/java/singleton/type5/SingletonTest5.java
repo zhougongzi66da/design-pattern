@@ -1,4 +1,4 @@
-package singleton.type7.type5;
+package singleton.type5;
 
 /**
  * @description: 单例模式-懒汉式（DoubleCheck）-测试类
