@@ -15,7 +15,7 @@ public class BoxFactory {
     private BoxFactory(){
         map=new HashMap<String, AbstractBox>();
         map.put("I",new IBox());
-        map.put("O",new IBox());
+        map.put("O",new OBox());
     }
     public static BoxFactory getInstance(){
         if (instance==null){

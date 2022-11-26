@@ -1,7 +1,7 @@
 package facade;
 
 /**
- * @description:
+ * @description: 外观类，用户主要和该类对象进行交互
  * @Author: zhouyiming
  * @CreateTime: 2022-10-14  16:17
  */
