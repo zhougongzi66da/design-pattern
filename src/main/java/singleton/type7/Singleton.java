@@ -6,10 +6,32 @@ package singleton.type7;
  * @Author: zhouyiming
  * @CreateTime: 2022-10-12  16:33
  */
-public enum Singleton {
-    INSTANCE;
+public class Singleton {
 
-    public void sayHello() {
-        System.out.println("hello");
+
+    private Singleton(){
+
+    }
+
+    /**
+     * 枚举类型是线程安全的，并且只会装载一次
+     */
+    private enum SingletonInstance{
+        INSTANCE;
+
+        private final Singleton instance;
+
+        SingletonInstance(){
+            instance = new Singleton();
+        }
+
+        private Singleton getInstance(){
+            return instance;
+        }
+    }
+
+    public static Singleton getInstance(){
+
+        return SingletonInstance.INSTANCE.getInstance();
     }
 }
